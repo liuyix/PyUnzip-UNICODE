@@ -1,17 +1,10 @@
-# PyUnzip-UNICODE
+# Wow! Python Unzip (WowPyUnzip)
 
-This project is forked from [WowPyUnzip](https://github.com/yftzeng/WowPyUnzip). Big thanks for original author - Yi-Feng, Tzeng(ant)
+The project is mainly on extract **Chinese/Japsnse/Korean(CJK)** zip files.
 
+In some linux distributions, such as Fedora/Ubuntu, there are few softwares can extract CJK filename correctly. I have tried `unzip`, `peazip` and `7z-zip`, but nothing helps.  In CJK communicity, many people suggest to patch `unzip` project with `unzpriv.h`. The method is hard for newbie, and the most important is even patched it still doesn't work.
 
-## TODO List
-
-+ default encoding
-+ install script for unbuntu
-+ make the package independently
-+ zip file encoding conversion
-+ integrate with nautilus,thunar
-+ *auto detect correct encoding method*
-+ maybe a simple UI for non-terminal geek
+That is why I develop myself tool, for easy, simple and correct. Try it, and have fun.
 
 
 ## Usage
@@ -31,6 +24,25 @@ This project is forked from [WowPyUnzip](https://github.com/yftzeng/WowPyUnzip).
 
 ## Required
 
-- Python 2.6,2.7
+- Python 2.6+
 
+
+
+## Author
+
+Yi-Feng, Tzeng (ant)
+
+yftzeng _AT_ gmail.com
+
+
+## License
+
+MIT License
+
+
+## Link
+
+ [OpenFoundry](http://www.openfoundry.org/of/projects/1822/)
+
+ [GitHub](git://github.com/yftzeng/WowPyUnzip.git)
 
