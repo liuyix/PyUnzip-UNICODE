@@ -7,8 +7,6 @@ import os
 import getopt
 import shutil
 
-DEFAULT_ENCODING = 'cp936'
-
 def usage():
     print """usage: unzip.py [-l] <zipfile> [[-e <encoding>] -p <password>]
     <zipfile> is the source zipfile to extract
@@ -89,7 +87,7 @@ def main():
         usage()
         sys.exit(2)
 
-    encoding = DEFAULT_ENCODING
+    encoding = 'cp950'
     password = None
     list_file = False
 
