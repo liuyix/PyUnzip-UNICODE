@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__version__ = "1.0"
-__revision__ = '1.2.1'
-__author__ = "Tzeng, Yi-Feng"
-__authorcontact__ = "yftzeng@gmail.com"
-__website__ = "http://antbsd.twbbs.org/"
-
 import sys
 import zipfile
 import os
@@ -60,7 +54,7 @@ def get_zipinfo_unicode(fileinfo, encoding=None):
 def pretty_datetime(datetime):
     return str(datetime[0]).zfill(2) + "-" + str(datetime[1]).zfill(2) + "-" + str(datetime[2]).zfill(2) + " " + str(datetime[3]).zfill(2) + ":" + str(datetime[4]).zfill(2) + ":" + str(datetime[5]).zfill(2)
     
-ZIPINFO_DESC = "{:>10}  {:>10}   {:>10}  FILE_NAME".format("压缩后", "解压后", "时间")
+ZIPINFO_DESC = "{:>10}  {:>10}  {:>10}  FILE_NAME".format("Compressed", "Real", "Datetime")
     
 def zipinfo_prettify(fileinfo, encoding=None):
     infos = get_zipinfo_unicode(fileinfo, encoding)
